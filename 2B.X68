@@ -91,7 +91,7 @@ START:
 
 file_error:
     lea    str_error,a1     ; Print cstring
-    move.l #13,d1
+    move.l #13,d0
     trap   #15
     SIMHALT
 
@@ -130,6 +130,7 @@ line_buffer: DS.B 256
 input_data:  DS.L 4096
 buffer:      DS.L 1024
     END    START
+
 
 
 *~Font name~Courier New~
