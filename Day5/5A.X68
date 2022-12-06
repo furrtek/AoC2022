@@ -3,8 +3,6 @@
 * Written by : furrtek
 *-----------------------------------------------------------
 
-; GFTNRBZPF
-
     ORG    $1000
 START:
     move.l #51,d0           ; Open file
@@ -181,6 +179,7 @@ line_buffer: DS.B 64
 input_data: DS.B 8192
 buffer: DS.B 8192           ; Stack blocks, max 255 crates per stack (first byte is current size + 1)
     END    START
+
 
 
 
